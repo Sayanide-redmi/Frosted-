@@ -1,0 +1,644 @@
+/**
+ * @name midnight
+ * @description a dark, customizable discord theme.
+ * @author refact0r
+ * @version 2.1.1
+ * @invite nz87hXyvcy
+ * @website https://github.com/refact0r/midnight-discord
+ * @source https://github.com/refact0r/midnight-discord/blob/master/themes/midnight.theme.css
+ * @authorId 508863359777505290
+ * @authorLink https://www.refact0r.dev
+*/
+
+/* import theme modules */
+@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
+
+/* FUVI's Loading Animation in Startup */
+/* @import url(https://feorev.github.io/Themes/Discord/FVUI/Cores/preload.css); */
+
+body {
+
+    /* font options */
+    --font: 'figtree';
+    --code-font: '';
+    font-weight: 400;
+
+    /* sizes */
+    --gap: 12px;
+    --divider-thickness: 4px;
+    --border-thickness: 1px;
+
+    /* animation/transition options */
+    --animations: on;
+    --list-item-transition: 0.2s ease;
+    --dms-icon-svg-transition: 0.4s ease;
+    --border-hover-transition: 0.2s ease;
+
+    /* top bar options */
+    --top-bar-height: var(--gap);
+    --top-bar-button-position: titlebar;
+    --top-bar-title-position: off;
+    --subtle-top-bar-title: off;
+
+    /* window controls */
+    --custom-window-controls: on;
+    --window-control-size: 14px;
+
+    /* dms button options */
+    --custom-dms-icon: custom;
+    --dms-icon-svg-url: url('https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg');
+    --dms-icon-svg-size: 90%;
+    --dms-icon-color-before: var(--icon-subtle);
+    --dms-icon-color-after: var(--white);
+
+    --custom-dms-background: off;
+    --dms-background-image-url: url('');
+    --dms-background-image-size: cover;
+
+    --dms-background-color: linear-gradient(
+        70deg,
+        var(--blue-2),
+        var(--purple-2),
+        var(--red-2)
+    );
+
+    /* ================================================= */
+    /* =============== BACKGROUND IMAGE ================= */
+    /* ================================================= */
+
+    --background-image: on;
+
+/* Edit the URL from this line */
+    --background-image-url: url('https://files.catbox.moe/r117dk.png ');
+
+/* Pick your image from this list, Copy the URL and set it in the line above. */
+*/ Birch jungle - https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHAzdWZscDE3cHJtMmt1Zzl0cjRyNGk2b3RzaXI3OTJzY2hlOGppaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/x6wVCdH7UuivYLc1MO/giphy.gif /*
+*/ Topographical white lines - https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzZ0dnlkNG81M2NxZTZydDh1ZGFxemM5eHpzcXZlNHF1cm1uOW4ybyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dWvS6EldLGr1p6oFba/giphy.gif/*
+*/ Blue Abstract lines - https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmZiOXczZDgyYnYweWNiajRxdTNqaHk1Z2I5NHh1bTZsYXQyZXlvMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/34Edr4BhxPOuoVsrls/giphy.gif */
+*/ Trials chamber - https://files.catbox.moe/o1nahn.png /*
+*/ Amethyst Caves - https://files.catbox.moe/r117dk.png */
+*/ Swamp biome Fan art - https://files.catbox.moe/obo635.jpg */
+*/ Owner(Me, Sayanide lol) and his Friend(Rewardz) - https://files.catbox.moe/p4hfng.jpg /*
+*/ Lilac field - https://files.catbox.moe/jauyzx.png /*
+
+    /* ================================================= */
+    /* ================= FROSTED GLASS ================= */
+    /* ================================================= */
+
+    --transparency-tweaks: on;
+
+    --remove-bg-layer: off;
+
+    --panel-blur: on;
+
+    /* IMPORTANT: no space */
+    --blur-amount: 12px;
+
+    /* floating popup panels */
+    --bg-floating: hsla(220, 15%, 12%, 0.82);
+
+    /* ================================================= */
+    /* ================= CHATBAR ======================= */
+    /* ================================================= */
+
+    --custom-chatbar: off;
+    --chatbar-height: 47px;
+
+    /* ================================================= */
+    /* ================= OTHER ========================= */
+    /* ================================================= */
+
+    --small-user-panel: on;
+}
+
+
+/* ===================================================== */
+/* ================= COLOR OPTIONS ===================== */
+/* ===================================================== */
+
+:root {
+
+    --colors: on;
+
+    /* ================================================= */
+    /* ================= TEXT COLORS =================== */
+    /* ================================================= */
+
+    --text-0: var(--bg-4);
+
+    --text-1: hsl(220, 35%, 96%);
+    --text-2: hsl(220, 25%, 88%);
+    --text-3: hsl(220, 25%, 82%);
+    --text-4: hsl(220, 18%, 68%);
+    --text-5: hsl(220, 12%, 50%);
+
+    /* ================================================= */
+    /* =========== MODULAR GLASS BACKGROUNDS =========== */
+    /* ================================================= */
+
+    --bg-1: hsla(220, 15%, 20%, 0.78);
+
+    --bg-2: hsla(220, 15%, 16%, 0.74);
+
+    --bg-3: hsla(220, 15%, 13%, 0.68);
+
+    --bg-4: hsla(220, 15%, 10%, 0.62);
+
+    /* ================================================= */
+    /* ================= UI STATES ===================== */
+    /* ================================================= */
+
+    --hover: hsla(221, 19%, 40%, 0.10);
+
+    --active: hsla(220, 19%, 40%, 0.20);
+
+    --active-2: hsla(220, 19%, 40%, 0.30);
+
+    --message-hover: hsla(220, 0%, 0%, 0.10);
+
+    /* ================================================= */
+    /* ================= ACCENT COLORS ================= */
+    /* ================================================= */
+
+    --accent-1: var(--blue-1);
+    --accent-2: var(--blue-2);
+    --accent-3: var(--blue-3);
+    --accent-4: var(--blue-4);
+    --accent-5: var(--blue-5);
+
+    --accent-new: var(--accent-2);
+
+    --mention: linear-gradient(
+        to right,
+        color-mix(in hsl, var(--accent-2), transparent 90%) 40%,
+        transparent
+    );
+
+    --mention-hover: linear-gradient(
+        to right,
+        color-mix(in hsl, var(--accent-2), transparent 95%) 40%,
+        transparent
+    );
+
+    --reply: linear-gradient(
+        to right,
+        color-mix(in hsl, var(--text-3), transparent 90%) 40%,
+        transparent
+    );
+
+    --reply-hover: linear-gradient(
+        to right,
+        color-mix(in hsl, var(--text-3), transparent 95%) 40%,
+        transparent
+    );
+
+    /* ================================================= */
+    /* ================= STATUS COLORS ================= */
+    /* ================================================= */
+
+    --online: var(--green-2);
+    --dnd: var(--red-2);
+    --idle: var(--yellow-2);
+    --streaming: var(--purple-2);
+    --offline: var(--text-4);
+
+    /* ================================================= */
+    /* ================= BORDER COLORS ================= */
+    /* ================================================= */
+
+    --border-light: hsla(0, 0%, 100%, 0.05);
+
+    --border: hsla(0, 0%, 100%, 0.10);
+
+    --border-hover: hsla(0, 0%, 100%, 0.16);
+
+    --button-border: hsla(220, 0%, 100%, 0.10);
+
+    /* ================================================= */
+    /* ================= BASE COLORS =================== */
+    /* ================================================= */
+
+    --red-1: oklch(75% 0.12 0);
+    --red-2: oklch(70% 0.12 0);
+    --red-3: oklch(65% 0.12 0);
+    --red-4: oklch(60% 0.12 0);
+    --red-5: oklch(55% 0.12 0);
+
+    --green-1: oklch(75% 0.11 170);
+    --green-2: oklch(70% 0.11 170);
+    --green-3: oklch(65% 0.11 170);
+    --green-4: oklch(60% 0.11 170);
+    --green-5: oklch(55% 0.11 160);
+
+    --blue-1: oklch(75% 0.1 215);
+    --blue-2: oklch(70% 0.1 215);
+    --blue-3: oklch(65% 0.1 215);
+    --blue-4: oklch(60% 0.1 215);
+    --blue-5: oklch(55% 0.1 215);
+
+    --yellow-1: oklch(80% 0.11 90);
+    --yellow-2: oklch(75% 0.11 90);
+    --yellow-3: oklch(70% 0.11 90);
+    --yellow-4: oklch(65% 0.11 90);
+    --yellow-5: oklch(60% 0.11 90);
+
+    --purple-1: oklch(75% 0.11 310);
+    --purple-2: oklch(70% 0.11 310);
+    --purple-3: oklch(65% 0.11 310);
+    --purple-4: oklch(60% 0.11 310);
+    --purple-5: oklch(55% 0.11 310);
+}
+
+
+/* ===================================================== */
+/* ================= CUSTOM GLASS FX =================== */
+/* ===================================================== */
+
+.visual-refresh .base_c48ade {
+
+    backdrop-filter: blur(14px);
+}
+
+/* ===================================================== */
+/* ================= MODULAR PANELS ==================== */
+/* ===================================================== */
+
+/* side panels */
+.sidebar_c48ade,
+.container__133bf,
+.membersWrap_c8ffbb,
+.panels_c48ade {
+
+    background: hsla(220, 15%, 12%, 0.50) !important;
+
+    backdrop-filter: blur(18px) !important;
+
+    border: 1px solid hsla(0, 0%, 100%, 0.06);
+}
+
+/* main chat area */
+/* only 5% darker */
+.chat_f75fb0 {
+
+    background: hsla(220, 15%, 10%, 0.15) !important;
+
+    backdrop-filter: blur(18px) !important;
+
+    border: 1px solid hsla(0, 0%, 100%, 0.06);
+}
+
+/* stronger section separation */
+.container__2637a,
+.container_f369db,
+.content_f75fb0 {
+
+    border-color: hsla(255, 255%, 255%, 0.08) !important;
+}
+
+/* easier readability */
+.messageContent_f9f2ca {
+
+    text-shadow: 0 1px 2px rgba(0,0,0,0.35);
+}
+
+/* cleaner member list */
+.members_c8ffbb {
+
+    background: transparent !important;
+}
+
+/* cleaner settings/channel areas */
+.contentRegionScroller__23e6b {
+
+    background: transparent !important;
+}
+
+/* subtle hover glow */
+.interactive_bf202d:hover {
+
+    background: hsla(255, 255%, 255%, 0.05) !important;
+}
+
+/* rounded modular panels */
+.sidebar_c48ade,
+.chat_f75fb0,
+.membersWrap_c8ffbb,
+.panels_c48ade {
+
+    border-radius: 14px !important;
+}
+
+/* smoother transitions */
+* {
+
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        backdrop-filter 0.25s ease;
+}
+
+
+
+
+/* ===================================================== */
+/* =========== PREMIUM CHAT SWITCH TRANSITION ========== */
+/* ===================================================== */
+
+/* main chat container */
+.chat_f75fb0 {
+
+    position: relative;
+
+    overflow: hidden;
+
+    animation: premiumChatSwitch 1s ease;
+}
+
+/* frosted overlay layer */
+.chat_f75fb0::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+        hsla(220, 20%, 85%, 0.08);
+
+    backdrop-filter: blur(18px);
+
+    opacity: 0;
+
+    z-index: 5;
+
+    animation: frostedOverlay 1s ease;
+}
+
+/* actual message content */
+.scrollerInner__36d07 {
+
+    animation: contentBlurIn 1s ease;
+}
+
+/* ===================================================== */
+/* ==================== ANIMATIONS ===================== */
+/* ===================================================== */
+
+/* whole chat transition */
+@keyframes premiumChatSwitch {
+
+    0% {
+
+        opacity: 0.88;
+
+        filter: blur(5px);
+
+        transform: scale(0.992);
+    }
+
+    45% {
+
+        opacity: 0.94;
+
+        filter: blur(10px);
+
+        transform: scale(0.996);
+    }
+
+    100% {
+
+        opacity: 1;
+
+        filter: blur(0px);
+
+        transform: scale(1);
+    }
+}
+
+/* frosted acrylic overlay */
+@keyframes frostedOverlay {
+
+    0% {
+
+        opacity: 0;
+    }
+
+    30% {
+
+        opacity: 1;
+    }
+
+    70% {
+
+        opacity: 0.65;
+    }
+
+    100% {
+
+        opacity: 0;
+    }
+}
+
+/* incoming content clarity */
+@keyframes contentBlurIn {
+
+    0% {
+
+        opacity: 0.7;
+
+        filter: blur(8px);
+
+        transform: translateY(6px);
+    }
+
+    100% {
+
+        opacity: 1;
+
+        filter: blur(0px);
+
+        transform: translateY(0px);
+    }
+}
+
+
+
+/* ===================================================== */
+/* =============== PREMIUM PANEL MOTION ================= */
+/* ===================================================== */
+
+/*
+    SAFE WITH YOUR CURRENT SETUP
+    - does not overwrite your existing chat transition
+    - only enhances panel appearance
+    - no preload overlays
+    - no fullscreen blockers
+*/
+
+/* left-side modules */
+.guilds_c48ade,
+.sidebar_c48ade,
+.container__133bf,
+.membersWrap_c8ffbb,
+.panels_c48ade {
+
+    animation:
+        panelSlideUpFade 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+
+    will-change:
+        transform,
+        opacity,
+        filter;
+}
+
+/* main chat area */
+.content_f75fb0 {
+
+    animation:
+        mainChatSlide 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+
+    will-change:
+        transform,
+        opacity,
+        filter;
+}
+
+/* settings window */
+.layer_da8173:has(.standardSidebarView__23e6b) {
+
+    animation:
+        settingsPanelReveal 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* modal smoothness */
+.layer_da8173,
+.focusLock__49fc1 {
+
+    animation:
+        softPanelFade 0.35s ease;
+}
+
+/* ===================================================== */
+/* ================== TYPING INDICATOR ================= */
+/* ===================================================== */
+
+/* typing text */
+.typing_b88801 {
+
+    color:
+        var(--accent-2) !important;
+
+    font-weight: 600;
+}
+
+/* typing dots */
+.typingDots_b88801 circle {
+
+    fill:
+        var(--accent-2) !important;
+}
+
+/* ===================================================== */
+/* ==================== ANIMATIONS ===================== */
+/* ===================================================== */
+
+/* left panels */
+@keyframes panelSlideUpFade {
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+            translateY(22px)
+            scale(0.985);
+
+        filter:
+            blur(10px);
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform:
+            translateY(0px)
+            scale(1);
+
+        filter:
+            blur(0px);
+    }
+}
+
+/* main chat */
+@keyframes mainChatSlide {
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+            translateX(34px)
+            scale(0.992);
+
+        filter:
+            blur(14px);
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform:
+            translateX(0px)
+            scale(1);
+
+        filter:
+            blur(0px);
+    }
+}
+
+/* settings */
+@keyframes settingsPanelReveal {
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+            translateY(26px)
+            scale(0.985);
+
+        filter:
+            blur(12px);
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform:
+            translateY(0px)
+            scale(1);
+
+        filter:
+            blur(0px);
+    }
+}
+
+/* generic */
+@keyframes softPanelFade {
+
+    from {
+
+        opacity: 0;
+    }
+
+    to {
+
+        opacity: 1;
+    }
+}
