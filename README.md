@@ -44,4 +44,3 @@ This version adds a clean, modern **frosted glass** aesthetic while keeping the 
 - Save the file (`Ctrl + S`)
 
 Enjoy your fresh new frosted look! ✨
-```
