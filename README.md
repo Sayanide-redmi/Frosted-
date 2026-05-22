@@ -1,5 +1,6 @@
 # ❄️ Frosted++
-### -# By Sayanide.
+## By Sayanide.
+-# Credits to refact0r for the midnight theme.
 
 A beautiful fork of the **Midnight Vencord** theme with fresh frosted glass overlays and enhanced customization.
 
